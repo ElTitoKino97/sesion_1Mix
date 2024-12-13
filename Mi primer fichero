@@ -1,4 +1,6 @@
+
 linea desde la rama alumno1
+linea1 desde la rama main
 
 def do_pasada(lista): #FUNCIONA
     resultado = []
