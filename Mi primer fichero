@@ -1,2 +1,17 @@
 linea1 desde la rama main
 
+def do_pasada(lista): #FUNCIONA
+    resultado = []
+    if len(lista) == 1:
+        resultado = lista
+    else:
+        if lista [1] > lista[0]:
+            aux = lista[0]
+            lista[0] = lista[1]
+            lista[1] = aux
+        resultado.append(lista[0])
+        resultado += do_pasada(lista[1:])
+    return resultado
+
+lista = [17,50,1,25,20]
+print(do_pasada(lista))
